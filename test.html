@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="ar" class=""
+      dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="application-name" content="جني" />
+    <meta name="csrf-token" content="bsgqc50S4Bh1csXASaheHBb933cahQPNNuaApbUR" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+
+    <meta name="description"
+          content="جني منصة تجارة إلكترونية متكاملة تقدّم منتجات وخدمات متنوعة: إلكترونيات، أزياء، ذهب، سيارات، غذاء، وغيرها. استمتع بدفع مرن (تقسيط، دفع مسبق أو عند الاستلام)، عروض حصرية، وشحن سريع. يدعم الموقع التجار بأدوات متطورة لإدارة المبيعات، ويمنح المتسوّقين تجربة سلسة مع توصيات ذكية وخيارات دفع آمنة.">
+    <meta name="keywords"
+          content="منصة جني, تجارة الكترونية, خدمات كي كارد, تطبيق الرافدين, شراء أونلاين, متجر إلكتروني, موقع تجارة إلكترونية, عروض وخصومات, شحن سريع, دفع إلكتروني, تخفيضات حصرية, منتجات أصلية, شراء بالاقساط, منتجات بالتقسيط">
+    <meta name="author" content="GINI”>
+    <meta property="og:image" content="https://app.gini.iq/img/favicon.png" />
+    <link rel="shortcut icon" href="https://app.gini.iq/img/favicon.png" type="image/x-icon" />
+    <title>جني</title>
+
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+
+    <link rel="preload" as="style" href="https://app.gini.iq/build/assets/app-17176ead.css" /><link rel="stylesheet" href="https://app.gini.iq/build/assets/app-17176ead.css" data-navigate-track="reload" />    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}</style>
+
+</head>
+
+<body class="">
+<div aria-live="assertive" @successmessage.window="toggle" x-show="show" x-data="{
+    show: false,
+    message: '',
+    timeout: '',
+    toggle(e) {
+        this.show = true;
+        this.timeout = setTimeout(() => this.show = false, 3000)
+        this.message = e.detail
+    },
+    hide() {
+        this.show = false;
+        clearTimeout(this.timeout);
+    }
+}" style="display:none"
+     class="pointer-events-none fixed inset-0 flex items-start px-4 py-6 sm:items-start sm:p-6 z-50">
+    <div class="flex w-full flex-col items-center space-y-4 sm:items-end">
+        <div x-show="show" x-transition:enter="transform ease-out duration-300 transition"
+             x-transition:enter-start="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
+             x-transition:enter-end="translate-y-0 opacity-100 sm:translate-x-0"
+             x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100"
+             x-transition:leave-end="opacity-0"
+             class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <div class="p-4">
+                <div class="flex items-center">
+                    <div class="flex w-0 flex-1 justify-between items-center">
+                        <svg class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <p class="ltr:ml-3 rtl:mr-3 w-0 flex-1 text-sm font-medium text-gray-900" x-text="message"></p>
+                    </div>
+                    <div class="ltr:ml-4 rtl:mr-4 flex flex-shrink-0">
+                        <button type="button" x-on:click="hide"
+                                class="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                            <span class="sr-only">Close</span>
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path
+                                        d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{
+    show: false,
+    message: '',
+    timeout: '',
+    toggle(e) {
+        this.show = true;
+        this.timeout = setTimeout(() => this.show = false, 3000)
+        this.message = e.detail
+    },
+    hide() {
+        this.show = false;
+        clearTimeout(this.timeout);
+    }
+}" aria-live="assertive" @errormessage.window="toggle" x-show="show" style="display:none"
+     class="pointer-events-none fixed inset-0 flex items-start px-4 py-6 sm:items-start sm:p-6 z-50">
+    <div class="flex w-full flex-col items-center space-y-4 sm:items-end">
+        <div x-show="show" x-transition:enter="transform ease-out duration-300 transition"
+             x-transition:enter-start="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
+             x-transition:enter-end="translate-y-0 opacity-100 sm:translate-x-0"
+             x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100"
+             x-transition:leave-end="opacity-0"
+             class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <div class="p-4">
+                <div class="flex items-center">
+                    <div class="flex w-0 flex-1 justify-between items-center">
+                        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                             class="h-6 w-6 text-red-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                        </svg>
+
+                        <p class="ltr:ml-3 rtl:mr-3 w-0 flex-1 text-sm font-medium text-gray-900" x-text="message"></p>
+                    </div>
+                    <div class="ltr:ml-4 rtl:mr-4 flex flex-shrink-0">
+                        <button type="button" x-on:click="hide"
+                                class="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                            <span class="sr-only">Close</span>
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path
+                                        d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div wire:snapshot="{&quot;data&quot;:{&quot;order&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Order&quot;,&quot;key&quot;:12873,&quot;s&quot;:&quot;mdl&quot;}],&quot;type&quot;:&quot;invoice&quot;},&quot;memo&quot;:{&quot;id&quot;:&quot;odgMluL0U0LlOpMKxRCG&quot;,&quot;name&quot;:&quot;clients.orders.print-order&quot;,&quot;path&quot;:&quot;clients\/orders\/print\/12873&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;ar&quot;},&quot;checksum&quot;:&quot;ef5b25f39ff296172bacce634891733dabf3d188c5f0b3adda2ffad6cfa14041&quot;}" wire:effects="[]" wire:id="odgMluL0U0LlOpMKxRCG">
+    <script>
+        window.onload = function() {
+            window.print();
+        }
+    </script>
+
+    <!--[if BLOCK]><![endif]-->        <!-- Invoice -->
+    <div class="bg-white px-4 py-5 sm:px-6 lg:px-8 h-screen">
+        <div class=" mx-auto max-w-3xl border-4 border-dashed border-[#F76E40] rounded-lg ">
+            <!-- Card -->
+            <div class="flex flex-col py-6 px-10">
+                <!-- Grid -->
+                <div class="flex justify-between">
+                    <div>
+                        <!--[if BLOCK]><![endif]-->    <svg class="h-12 w-auto" viewBox="0 0 86 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M18.3434 54.7061C15.2058 54.705 12.6655 54.4279 10.1767 53.7495C8.18944 53.2078 6.30314 52.4337 4.58823 51.2761C3.2914 50.4008 2.16636 49.3497 1.31946 48.0227C0.344054 46.4944 -0.104332 44.8233 0.0204278 43.0129C0.141431 41.2566 0.804615 39.7085 1.89533 38.3373C2.86167 37.1224 4.05266 36.1706 5.38408 35.3877C7.09808 34.3797 8.94345 33.7035 10.8703 33.2384C12.2392 32.908 13.6271 32.6975 15.0303 32.5764C16.4678 32.4522 17.907 32.4294 19.3462 32.4981C21.9602 32.6227 24.5214 33.0465 26.9951 33.928C28.8031 34.5723 30.4942 35.4331 31.9836 36.6588C33.1751 37.6394 34.1742 38.7838 34.7973 40.2075C36.001 42.9575 35.7597 45.6084 34.1484 48.1298C33.3479 49.3826 32.2713 50.3711 31.0519 51.2085C29.4661 52.2977 27.7245 53.0531 25.8877 53.6003C24.3931 54.0456 22.868 54.3385 21.3183 54.5099C20.1423 54.64 18.9637 54.7087 18.3436 54.706L18.3434 54.7061ZM17.7026 37.2816C16.5076 37.2977 15.2548 37.3711 14.0096 37.5587C12.541 37.78 11.1049 38.1237 9.71921 38.6637C8.61257 39.095 7.56616 39.6352 6.64464 40.3956C6.09417 40.8498 5.61598 41.368 5.28251 42.0048C4.75199 43.0177 4.73165 44.0424 5.23678 45.0717C5.52336 45.6557 5.93715 46.1419 6.41805 46.5733C7.32817 47.3899 8.38506 47.9641 9.51024 48.4183C11.8449 49.3608 14.2895 49.7652 16.7909 49.8621C18.5666 49.9309 20.3337 49.8242 22.0865 49.5188C23.4835 49.2753 24.848 48.9149 26.1582 48.3665C27.2307 47.9176 28.2422 47.3639 29.1142 46.5819C29.6205 46.1278 30.0541 45.6154 30.3425 44.9932C30.6105 44.4148 30.7279 43.8128 30.6401 43.1729C30.5541 42.5466 30.3013 41.9939 29.9361 41.4872C29.4775 40.8508 28.8936 40.3466 28.248 39.9104C27.1914 39.1964 26.0337 38.6967 24.8235 38.3113C22.5273 37.5798 20.1651 37.2991 17.7023 37.2817L17.7026 37.2816Z"
+                                fill="#3F3F3F" />
+                        <path
+                                d="M17.9424 6.94724C18.4559 6.94206 19.1743 7.01487 19.8892 7.14222C20.3947 7.23226 20.7902 7.49124 21.0699 7.90775C21.2303 8.14652 21.3596 8.41353 21.4611 8.68352C22.2855 10.8784 23.7415 12.5067 25.8247 13.5757C26.3591 13.85 26.9227 14.05 27.5012 14.2124C27.748 14.2815 27.9955 14.3658 28.2234 14.4813C28.7494 14.7482 29.0714 15.1778 29.2136 15.7579C29.8043 18.1692 29.6432 20.5268 28.7376 22.8362C27.2638 26.5945 23.9898 29.2998 20.0198 30.0297C17.8247 30.4333 15.6782 30.2581 13.5917 29.4514C10.224 28.1491 7.89949 25.8078 6.64049 22.4234C6.07175 20.8946 5.87185 19.3024 6.01851 17.6836C6.51068 12.2465 10.3793 8.22464 15.2523 7.20311C16.1093 7.02355 16.8543 6.94621 17.9426 6.94737L17.9424 6.94724ZM24.6606 18.64C24.6499 18.4155 24.6467 18.1903 24.6261 17.9667C24.6086 17.7766 24.5755 17.5875 24.5417 17.3994C24.013 14.4511 21.5046 12.0026 18.1522 11.8002C16.8881 11.7239 15.6855 11.9836 14.5606 12.5719C11.4612 14.1929 10.0629 17.7356 11.36 21.0371C12.8902 24.9319 17.5374 26.5758 21.1858 24.4897C23.4277 23.2079 24.5836 21.2325 24.6609 18.6399L24.6606 18.64Z"
+                                fill="#3F3F3F" />
+                        <path
+                                d="M35.5261 5.73177C35.5253 8.93084 32.8829 11.4724 29.7223 11.4409C26.5289 11.4091 24.0156 8.78989 24.0274 5.69511C24.039 2.62986 26.5498 -0.0131651 29.7965 4.93398e-05C32.9771 0.0130047 35.5397 2.5761 35.5261 5.73177Z"
+                                fill="#F05D25" />
+                        <path
+                                d="M83.4512 17.8077C82.1481 17.8077 81.0186 18.9158 81.0186 20.2586V45.2386C81.0186 46.5217 82.1458 47.6895 83.4512 47.6895C84.9317 47.6895 86.0002 46.5218 86.0002 45.2386V20.2607C86.0002 18.918 84.9335 17.8077 83.4512 17.8077Z"
+                                fill="#3F3F3F" />
+                        <path
+                                d="M63.4288 17.8077C56.7887 17.8077 51.3347 23.1193 51.3347 29.6583V45.2386C51.3347 46.5217 52.462 47.6895 53.8253 47.6895C55.1886 47.6895 56.314 46.5793 56.314 45.2386V29.6583C56.314 25.7472 59.516 22.6537 63.4265 22.6537C67.2807 22.6537 70.4806 25.7472 70.4806 29.6583V45.2386C70.4806 46.5217 71.6078 47.6895 72.9716 47.6895C74.3354 47.6895 75.4622 46.5793 75.4622 45.2386V29.6583C75.4645 23.1213 70.01 17.8077 63.4288 17.8077Z"
+                                fill="#3F3F3F" />
+                        <path
+                                d="M60.9229 11.4385C60.0898 13.4629 56.8099 13.2227 56.3674 11.0278L55.7982 8.59802C55.6439 7.97435 56.6354 7.75708 56.7717 8.37C56.7717 8.37 57.3407 10.7998 57.3407 10.7997C57.7358 12.5892 60.5494 11.9174 60.1091 10.1514L59.54 7.72159C59.4787 7.4595 59.6478 7.19119 59.9143 7.12875C60.1786 7.06721 60.4541 7.24016 60.5167 7.4972C60.5167 7.4972 61.0859 9.92698 61.0859 9.92685C61.4823 11.716 64.2926 11.0449 63.8543 9.27856L63.2852 6.84878C63.1342 6.22407 64.117 6.00927 64.2581 6.62077L64.8272 9.05055C65.4071 11.2052 62.5695 12.8938 60.9229 11.4385Z"
+                                fill="#F05D25" />
+                        <path
+                                d="M43.2442 17.8077C41.9411 17.8077 40.8115 18.9158 40.8115 20.2586V45.2386C40.8115 46.5217 41.9388 47.6895 43.2442 47.6895C44.7247 47.6895 45.7931 46.5218 45.7931 45.2386V20.2607C45.7931 18.918 44.7265 17.8077 43.2442 17.8077Z"
+                                fill="#3F3F3F" />
+                    </svg>
+                        <!--[if ENDBLOCK]><![endif]-->
+
+                        <h1 class="mt-2 text-lg md:text-xl font-semibold text-[#F76E40]">
+                            منصة جني للتجارة الإلكترونية
+                        </h1>
+                    </div>
+                    <!-- Col -->
+
+                    <div class="text-end">
+
+                        <span class="block text-gray-500">012873</span>
+
+                        <span class="mt-2">
+                                <?xml version="1.0" standalone="no" ?>
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="237" height="60" viewBox="0 0 237 60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<desc>12873</desc>
+	<g id="bars" fill="black" stroke="none">
+		<rect x="0" y="0" width="6" height="60" />
+		<rect x="9" y="0" width="3" height="60" />
+		<rect x="18" y="0" width="3" height="60" />
+		<rect x="33" y="0" width="3" height="60" />
+		<rect x="42" y="0" width="9" height="60" />
+		<rect x="57" y="0" width="6" height="60" />
+		<rect x="66" y="0" width="3" height="60" />
+		<rect x="72" y="0" width="9" height="60" />
+		<rect x="84" y="0" width="12" height="60" />
+		<rect x="99" y="0" width="9" height="60" />
+		<rect x="114" y="0" width="6" height="60" />
+		<rect x="123" y="0" width="3" height="60" />
+		<rect x="132" y="0" width="3" height="60" />
+		<rect x="147" y="0" width="6" height="60" />
+		<rect x="156" y="0" width="3" height="60" />
+		<rect x="165" y="0" width="12" height="60" />
+		<rect x="180" y="0" width="9" height="60" />
+		<rect x="192" y="0" width="3" height="60" />
+		<rect x="198" y="0" width="6" height="60" />
+		<rect x="213" y="0" width="9" height="60" />
+		<rect x="225" y="0" width="3" height="60" />
+		<rect x="231" y="0" width="6" height="60" />
+	</g>
+</svg>
+
+                            </span>
+                    </div>
+                    <!-- Col -->
+                </div>
+                <!-- End Grid -->
+                <hr class="mt-4">
+                <!-- Grid -->
+                <div class="mt-4 grid sm:grid-cols-2 gap-3">
+                    <div class="text-start">
+                        <h3 class="font-semibold text-gray-800">المتجر</h3>
+                        <h3 class="font-semibold text-gray-800">منصة جني</h3>
+                        <address class="mt-2 not-italic text-gray-500">
+                            07700000000<br>
+                            بغداد - جسر الميكانيك<br>
+                        </address>
+                    </div>
+                    <!-- Col -->
+
+                    <div class="text-start">
+                        <h3 class="font-semibold text-gray-800">الزبون</h3>
+                        <h3 class="font-semibold text-gray-800">عمر ناظم شاكر الكروي</h3>
+                        <!--[if BLOCK]><![endif]-->                                <address class="mt-2 not-italic text-gray-500">
+                        0771006368]<br>
+                        سبع ابكار, بغداد, الحسينية<br>
+                    </address>
+                        <!--[if ENDBLOCK]><![endif]-->
+                    </div>
+                    <!-- Col -->
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="text-sm text-right not-italic text-gray-500">
+                        تاريخ الطلب : <span>Sun, Feb 9, 2025 12:58 PM</span>
+                    </h4>
+                </div>
+                <!-- End Grid -->
+
+                <!-- Table -->
+                <div class="mt-4">
+                    <div class="border border-gray-200 p-4 rounded-lg space-y-4">
+                        <div class="hidden sm:grid sm:grid-cols-3">
+                            <div class="text-xs font-medium text-gray-500 uppercase">المنتج</div>
+                            <div class="text-start text-xs font-medium text-gray-500 uppercase">الكمية</div>
+                            <div class="text-end text-xs font-medium text-gray-500 uppercase">السعر</div>
+                        </div>
+
+                        <div class="hidden sm:block border-b border-gray-200"></div>
+
+                        <!--[if BLOCK]><![endif]-->                                <div class="grid grid-cols-3 gap-2">
+                        <div class="">
+                            <p class="text-sm font-medium text-gray-800">دريل</p>
+                        </div>
+                        <div>
+                            <p class="text-start text-sm text-gray-800">
+                                1
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-end text-gray-800">
+                                IQD 20,000
+                            </p>
+                        </div>
+                    </div>
+
+                        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+                        <!--[if ENDBLOCK]><![endif]-->
+                    </div>
+                </div>
+                <!-- End Table -->
+
+                <!-- Flex -->
+                <div class="mt-4 flex sm:justify-start">
+                    <div class="w-full max-w-2xl sm:text-start space-y-2">
+                        <!-- Grid -->
+                        <div class="grid grid-cols-2 sm:grid-cols-1 gap-3 sm:gap-2">
+
+                            <dl class="grid sm:grid-cols-5 gap-x-3">
+                                <dt class="col-span-3 font-semibold text-gray-800">طريقة الدفع</dt>
+                                <dd class="col-span-2 text-gray-500 font-semibold">
+                                    الدفع عند الاستلام
+                            </dl>
+
+                            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+                            <dl class="grid sm:grid-cols-5 gap-x-3">
+                                <dt class="col-span-3 font-semibold text-gray-800">
+                                    المبلغ الكلي
+                                </dt>
+                                <dd class="col-span-2 text-gray-500 font-semibold">
+                                    IQD 20,000
+                                </dd>
+                            </dl>
+
+                            <dl class="grid sm:grid-cols-5 gap-x-3">
+                                <dt class="col-span-3 font-semibold text-gray-800">التوصيل</dt>
+                                <dd class="col-span-2 text-gray-500 font-semibold">
+                                    IQD 5,000
+                                </dd>
+                            </dl>
+
+                        </div>
+                        <!-- End Grid -->
+                    </div>
+                </div>
+                <!-- End Flex -->
+
+                <div
+                        class="mt-4 flex items-center justify-between bg-orange-50 py-2 px-4 border-2 border-dashed border-gray-700 rounded-lg">
+                    <h4 class="font-semibold text-xl text-gray-800">
+                        المبلغ الواجب دفعه
+                    </h4>
+                    <h4 class="font-semibold text-xl text-gray-800">
+                        IQD 25,000
+                    </h4>
+                </div>
+
+                <hr class="mt-4">
+                <div class="flex items-center justify-between mt-2">
+                        <span class="block">
+                            في حال تمزق الكود الشريطي في الأعلى يمكنك استخدام الكود البريدي لمعرف تفاصيل الطلب
+                        </span>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJxci1zdmcgcXJjb2RlIiB2aWV3Qm94PSIwIDAgMjkgMjkiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4KPHBhdGggY2xhc3M9InFyLWRhdGEgbGlnaHQgcXJjb2RlIiBmaWxsPSIjZmZmIiBkPSJNMTQgNCBoMSB2MSBoLTFaIE0xNiA1IGgxIHYxIGgtMVogTTE0IDYgaDEgdjEgaC0xWiBNMTQgNyBoMSB2MSBoLTFaIE0xNiA3IGgxIHYxIGgtMVogTTEzIDggaDEgdjEgaC0xWiBNMTUgOCBoMSB2MSBoLTFaIE0xMyA5IGgxIHYxIGgtMVogTTE0IDkgaDEgdjEgaC0xWiBNMTUgOSBoMSB2MSBoLTFaIE0xNCAxMSBoMSB2MSBoLTFaIE0xNiAxMiBoMSB2MSBoLTFaIE00IDEzIGgxIHYxIGgtMVogTTYgMTMgaDEgdjEgaC0xWiBNOCAxMyBoMSB2MSBoLTFaIE05IDEzIGgxIHYxIGgtMVogTTEyIDEzIGgxIHYxIGgtMVogTTE1IDEzIGgxIHYxIGgtMVogTTE2IDEzIGgxIHYxIGgtMVogTTE3IDEzIGgxIHYxIGgtMVogTTE5IDEzIGgxIHYxIGgtMVogTTIwIDEzIGgxIHYxIGgtMVogTTI0IDEzIGgxIHYxIGgtMVogTTUgMTQgaDEgdjEgaC0xWiBNNyAxNCBoMSB2MSBoLTFaIE0xMiAxNCBoMSB2MSBoLTFaIE0xNCAxNCBoMSB2MSBoLTFaIE0xNSAxNCBoMSB2MSBoLTFaIE0xNyAxNCBoMSB2MSBoLTFaIE0xOCAxNCBoMSB2MSBoLTFaIE0xOSAxNCBoMSB2MSBoLTFaIE0yMyAxNCBoMSB2MSBoLTFaIE00IDE1IGgxIHYxIGgtMVogTTYgMTUgaDEgdjEgaC0xWiBNNyAxNSBoMSB2MSBoLTFaIE05IDE1IGgxIHYxIGgtMVogTTEyIDE1IGgxIHYxIGgtMVogTTEzIDE1IGgxIHYxIGgtMVogTTE1IDE1IGgxIHYxIGgtMVogTTE2IDE1IGgxIHYxIGgtMVogTTE3IDE1IGgxIHYxIGgtMVogTTE5IDE1IGgxIHYxIGgtMVogTTIwIDE1IGgxIHYxIGgtMVogTTIyIDE1IGgxIHYxIGgtMVogTTI0IDE1IGgxIHYxIGgtMVogTTQgMTYgaDEgdjEgaC0xWiBNNSAxNiBoMSB2MSBoLTFaIE02IDE2IGgxIHYxIGgtMVogTTE1IDE2IGgxIHYxIGgtMVogTTE3IDE2IGgxIHYxIGgtMVogTTE5IDE2IGgxIHYxIGgtMVogTTIxIDE2IGgxIHYxIGgtMVogTTIyIDE2IGgxIHYxIGgtMVogTTIzIDE2IGgxIHYxIGgtMVogTTI0IDE2IGgxIHYxIGgtMVogTTE0IDE3IGgxIHYxIGgtMVogTTE2IDE3IGgxIHYxIGgtMVogTTE4IDE3IGgxIHYxIGgtMVogTTIwIDE3IGgxIHYxIGgtMVogTTIyIDE3IGgxIHYxIGgtMVogTTI0IDE3IGgxIHYxIGgtMVogTTE2IDE4IGgxIHYxIGgtMVogTTIwIDE4IGgxIHYxIGgtMVogTTIxIDE4IGgxIHYxIGgtMVogTTEzIDE5IGgxIHYxIGgtMVogTTE4IDE5IGgxIHYxIGgtMVogTTIyIDE5IGgxIHYxIGgtMVogTTIzIDE5IGgxIHYxIGgtMVogTTI0IDE5IGgxIHYxIGgtMVogTTEzIDIwIGgxIHYxIGgtMVogTTE2IDIwIGgxIHYxIGgtMVogTTIwIDIwIGgxIHYxIGgtMVogTTIxIDIwIGgxIHYxIGgtMVogTTIzIDIwIGgxIHYxIGgtMVogTTEzIDIxIGgxIHYxIGgtMVogTTE0IDIxIGgxIHYxIGgtMVogTTE1IDIxIGgxIHYxIGgtMVogTTE2IDIxIGgxIHYxIGgtMVogTTE3IDIxIGgxIHYxIGgtMVogTTE5IDIxIGgxIHYxIGgtMVogTTIwIDIxIGgxIHYxIGgtMVogTTIxIDIxIGgxIHYxIGgtMVogTTI0IDIxIGgxIHYxIGgtMVogTTEzIDIyIGgxIHYxIGgtMVogTTE1IDIyIGgxIHYxIGgtMVogTTE3IDIyIGgxIHYxIGgtMVogTTE4IDIyIGgxIHYxIGgtMVogTTE5IDIyIGgxIHYxIGgtMVogTTIxIDIyIGgxIHYxIGgtMVogTTIyIDIyIGgxIHYxIGgtMVogTTIzIDIyIGgxIHYxIGgtMVogTTE1IDIzIGgxIHYxIGgtMVogTTE2IDIzIGgxIHYxIGgtMVogTTE3IDIzIGgxIHYxIGgtMVogTTE5IDIzIGgxIHYxIGgtMVogTTIwIDIzIGgxIHYxIGgtMVogTTIxIDIzIGgxIHYxIGgtMVogTTIzIDIzIGgxIHYxIGgtMVogTTI0IDIzIGgxIHYxIGgtMVogTTE1IDI0IGgxIHYxIGgtMVoKTTE3IDI0IGgxIHYxIGgtMVogTTE5IDI0IGgxIHYxIGgtMVogTTIxIDI0IGgxIHYxIGgtMVogTTIzIDI0IGgxIHYxIGgtMVoiLz4KPHBhdGggY2xhc3M9InFyLWZpbmRlciBsaWdodCBxcmNvZGUiIGZpbGw9IiNmZmYiIGQ9Ik01IDUgaDEgdjEgaC0xWiBNNiA1IGgxIHYxIGgtMVogTTcgNSBoMSB2MSBoLTFaIE04IDUgaDEgdjEgaC0xWiBNOSA1IGgxIHYxIGgtMVogTTE5IDUgaDEgdjEgaC0xWiBNMjAgNSBoMSB2MSBoLTFaIE0yMSA1IGgxIHYxIGgtMVogTTIyIDUgaDEgdjEgaC0xWiBNMjMgNSBoMSB2MSBoLTFaIE01IDYgaDEgdjEgaC0xWiBNOSA2IGgxIHYxIGgtMVogTTE5IDYgaDEgdjEgaC0xWiBNMjMgNiBoMSB2MSBoLTFaIE01IDcgaDEgdjEgaC0xWiBNOSA3IGgxIHYxIGgtMVogTTE5IDcgaDEgdjEgaC0xWiBNMjMgNyBoMSB2MSBoLTFaIE01IDggaDEgdjEgaC0xWiBNOSA4IGgxIHYxIGgtMVogTTE5IDggaDEgdjEgaC0xWiBNMjMgOCBoMSB2MSBoLTFaIE01IDkgaDEgdjEgaC0xWiBNNiA5IGgxIHYxIGgtMVogTTcgOSBoMSB2MSBoLTFaIE04IDkgaDEgdjEgaC0xWiBNOSA5IGgxIHYxIGgtMVogTTE5IDkgaDEgdjEgaC0xWiBNMjAgOSBoMSB2MSBoLTFaIE0yMSA5IGgxIHYxIGgtMVogTTIyIDkgaDEgdjEgaC0xWiBNMjMgOSBoMSB2MSBoLTFaIE01IDE5IGgxIHYxIGgtMVogTTYgMTkgaDEgdjEgaC0xWiBNNyAxOSBoMSB2MSBoLTFaIE04IDE5IGgxIHYxIGgtMVogTTkgMTkgaDEgdjEgaC0xWiBNNSAyMCBoMSB2MSBoLTFaIE05IDIwIGgxIHYxIGgtMVogTTUgMjEgaDEgdjEgaC0xWiBNOSAyMSBoMSB2MSBoLTFaIE01IDIyIGgxIHYxIGgtMVogTTkgMjIgaDEgdjEgaC0xWiBNNSAyMyBoMSB2MSBoLTFaIE02IDIzIGgxIHYxIGgtMVogTTcgMjMgaDEgdjEgaC0xWiBNOCAyMyBoMSB2MSBoLTFaIE05IDIzIGgxIHYxIGgtMVoiLz4KPHBhdGggY2xhc3M9InFyLXNlcGFyYXRvciBsaWdodCBxcmNvZGUiIGZpbGw9IiNmZmYiIGQ9Ik0xMSA0IGgxIHYxIGgtMVogTTE3IDQgaDEgdjEgaC0xWiBNMTEgNSBoMSB2MSBoLTFaIE0xNyA1IGgxIHYxIGgtMVogTTExIDYgaDEgdjEgaC0xWiBNMTcgNiBoMSB2MSBoLTFaIE0xMSA3IGgxIHYxIGgtMVogTTE3IDcgaDEgdjEgaC0xWiBNMTEgOCBoMSB2MSBoLTFaIE0xNyA4IGgxIHYxIGgtMVogTTExIDkgaDEgdjEgaC0xWiBNMTcgOSBoMSB2MSBoLTFaIE0xMSAxMCBoMSB2MSBoLTFaIE0xNyAxMCBoMSB2MSBoLTFaIE00IDExIGgxIHYxIGgtMVogTTUgMTEgaDEgdjEgaC0xWiBNNiAxMSBoMSB2MSBoLTFaIE03IDExIGgxIHYxIGgtMVogTTggMTEgaDEgdjEgaC0xWiBNOSAxMSBoMSB2MSBoLTFaIE0xMCAxMSBoMSB2MSBoLTFaIE0xMSAxMSBoMSB2MSBoLTFaIE0xNyAxMSBoMSB2MSBoLTFaIE0xOCAxMSBoMSB2MSBoLTFaIE0xOSAxMSBoMSB2MSBoLTFaIE0yMCAxMSBoMSB2MSBoLTFaIE0yMSAxMSBoMSB2MSBoLTFaIE0yMiAxMSBoMSB2MSBoLTFaIE0yMyAxMSBoMSB2MSBoLTFaIE0yNCAxMSBoMSB2MSBoLTFaIE00IDE3IGgxIHYxIGgtMVogTTUgMTcgaDEgdjEgaC0xWiBNNiAxNyBoMSB2MSBoLTFaIE03IDE3IGgxIHYxIGgtMVogTTggMTcgaDEgdjEgaC0xWiBNOSAxNyBoMSB2MSBoLTFaIE0xMCAxNyBoMSB2MSBoLTFaIE0xMSAxNyBoMSB2MSBoLTFaIE0xMSAxOCBoMSB2MSBoLTFaIE0xMSAxOSBoMSB2MSBoLTFaIE0xMSAyMCBoMSB2MSBoLTFaIE0xMSAyMSBoMSB2MSBoLTFaIE0xMSAyMiBoMSB2MSBoLTFaIE0xMSAyMyBoMSB2MSBoLTFaIE0xMSAyNCBoMSB2MSBoLTFaIi8+CjxwYXRoIGNsYXNzPSJxci10aW1pbmcgbGlnaHQgcXJjb2RlIiBmaWxsPSIjZmZmIiBkPSJNMTMgMTAgaDEgdjEgaC0xWiBNMTUgMTAgaDEgdjEgaC0xWiBNMTAgMTMgaDEgdjEgaC0xWiBNMTAgMTUgaDEgdjEgaC0xWiIvPgo8cGF0aCBjbGFzcz0icXItZm9ybWF0IGxpZ2h0IHFyY29kZSIgZmlsbD0iI2ZmZiIgZD0iTTEyIDQgaDEgdjEgaC0xWiBNMTIgNSBoMSB2MSBoLTFaIE0xMiA3IGgxIHYxIGgtMVogTTEyIDggaDEgdjEgaC0xWiBNMTIgOSBoMSB2MSBoLTFaIE03IDEyIGgxIHYxIGgtMVogTTE5IDEyIGgxIHYxIGgtMVogTTIwIDEyIGgxIHYxIGgtMVogTTIxIDEyIGgxIHYxIGgtMVogTTIzIDEyIGgxIHYxIGgtMVogTTI0IDEyIGgxIHYxIGgtMVogTTEyIDIxIGgxIHYxIGgtMVoiLz4KPHBhdGggY2xhc3M9InFyLXF1aWV0em9uZSBsaWdodCBxcmNvZGUiIGZpbGw9IiNmZmYiIGQ9Ik0wIDAgaDEgdjEgaC0xWiBNMSAwIGgxIHYxIGgtMVogTTIgMCBoMSB2MSBoLTFaIE0zIDAgaDEgdjEgaC0xWiBNNCAwIGgxIHYxIGgtMVogTTUgMCBoMSB2MSBoLTFaIE02IDAgaDEgdjEgaC0xWiBNNyAwIGgxIHYxIGgtMVogTTggMCBoMSB2MSBoLTFaIE05IDAgaDEgdjEgaC0xWiBNMTAgMCBoMSB2MSBoLTFaIE0xMSAwIGgxIHYxIGgtMVogTTEyIDAgaDEgdjEgaC0xWiBNMTMgMCBoMSB2MSBoLTFaIE0xNCAwIGgxIHYxIGgtMVogTTE1IDAgaDEgdjEgaC0xWiBNMTYgMCBoMSB2MSBoLTFaIE0xNyAwIGgxIHYxIGgtMVogTTE4IDAgaDEgdjEgaC0xWiBNMTkgMCBoMSB2MSBoLTFaIE0yMCAwIGgxIHYxIGgtMVogTTIxIDAgaDEgdjEgaC0xWiBNMjIgMCBoMSB2MSBoLTFaIE0yMyAwIGgxIHYxIGgtMVogTTI0IDAgaDEgdjEgaC0xWiBNMjUgMCBoMSB2MSBoLTFaIE0yNiAwIGgxIHYxIGgtMVogTTI3IDAgaDEgdjEgaC0xWiBNMjggMCBoMSB2MSBoLTFaIE0wIDEgaDEgdjEgaC0xWiBNMSAxIGgxIHYxIGgtMVogTTIgMSBoMSB2MSBoLTFaIE0zIDEgaDEgdjEgaC0xWiBNNCAxIGgxIHYxIGgtMVogTTUgMSBoMSB2MSBoLTFaIE02IDEgaDEgdjEgaC0xWiBNNyAxIGgxIHYxIGgtMVogTTggMSBoMSB2MSBoLTFaIE05IDEgaDEgdjEgaC0xWiBNMTAgMSBoMSB2MSBoLTFaIE0xMSAxIGgxIHYxIGgtMVogTTEyIDEgaDEgdjEgaC0xWiBNMTMgMSBoMSB2MSBoLTFaIE0xNCAxIGgxIHYxIGgtMVogTTE1IDEgaDEgdjEgaC0xWiBNMTYgMSBoMSB2MSBoLTFaIE0xNyAxIGgxIHYxIGgtMVogTTE4IDEgaDEgdjEgaC0xWiBNMTkgMSBoMSB2MSBoLTFaIE0yMCAxIGgxIHYxIGgtMVogTTIxIDEgaDEgdjEgaC0xWiBNMjIgMSBoMSB2MSBoLTFaIE0yMyAxIGgxIHYxIGgtMVogTTI0IDEgaDEgdjEgaC0xWiBNMjUgMSBoMSB2MSBoLTFaIE0yNiAxIGgxIHYxIGgtMVogTTI3IDEgaDEgdjEgaC0xWiBNMjggMSBoMSB2MSBoLTFaIE0wIDIgaDEgdjEgaC0xWiBNMSAyIGgxIHYxIGgtMVogTTIgMiBoMSB2MSBoLTFaIE0zIDIgaDEgdjEgaC0xWiBNNCAyIGgxIHYxIGgtMVogTTUgMiBoMSB2MSBoLTFaIE02IDIgaDEgdjEgaC0xWiBNNyAyIGgxIHYxIGgtMVogTTggMiBoMSB2MSBoLTFaIE05IDIgaDEgdjEgaC0xWiBNMTAgMiBoMSB2MSBoLTFaIE0xMSAyIGgxIHYxIGgtMVogTTEyIDIgaDEgdjEgaC0xWiBNMTMgMiBoMSB2MSBoLTFaIE0xNCAyIGgxIHYxIGgtMVogTTE1IDIgaDEgdjEgaC0xWiBNMTYgMiBoMSB2MSBoLTFaIE0xNyAyIGgxIHYxIGgtMVogTTE4IDIgaDEgdjEgaC0xWiBNMTkgMiBoMSB2MSBoLTFaIE0yMCAyIGgxIHYxIGgtMVogTTIxIDIgaDEgdjEgaC0xWiBNMjIgMiBoMSB2MSBoLTFaIE0yMyAyIGgxIHYxIGgtMVogTTI0IDIgaDEgdjEgaC0xWiBNMjUgMiBoMSB2MSBoLTFaIE0yNiAyIGgxIHYxIGgtMVogTTI3IDIgaDEgdjEgaC0xWiBNMjggMiBoMSB2MSBoLTFaIE0wIDMgaDEgdjEgaC0xWiBNMSAzIGgxIHYxIGgtMVogTTIgMyBoMSB2MSBoLTFaIE0zIDMgaDEgdjEgaC0xWiBNNCAzIGgxIHYxIGgtMVogTTUgMyBoMSB2MSBoLTFaIE02IDMgaDEgdjEgaC0xWiBNNyAzIGgxIHYxIGgtMVogTTggMyBoMSB2MSBoLTFaIE05IDMgaDEgdjEgaC0xWiBNMTAgMyBoMSB2MSBoLTFaIE0xMSAzIGgxIHYxIGgtMVogTTEyIDMgaDEgdjEgaC0xWgpNMTMgMyBoMSB2MSBoLTFaIE0xNCAzIGgxIHYxIGgtMVogTTE1IDMgaDEgdjEgaC0xWiBNMTYgMyBoMSB2MSBoLTFaIE0xNyAzIGgxIHYxIGgtMVogTTE4IDMgaDEgdjEgaC0xWiBNMTkgMyBoMSB2MSBoLTFaIE0yMCAzIGgxIHYxIGgtMVogTTIxIDMgaDEgdjEgaC0xWiBNMjIgMyBoMSB2MSBoLTFaIE0yMyAzIGgxIHYxIGgtMVogTTI0IDMgaDEgdjEgaC0xWiBNMjUgMyBoMSB2MSBoLTFaIE0yNiAzIGgxIHYxIGgtMVogTTI3IDMgaDEgdjEgaC0xWiBNMjggMyBoMSB2MSBoLTFaIE0wIDQgaDEgdjEgaC0xWiBNMSA0IGgxIHYxIGgtMVogTTIgNCBoMSB2MSBoLTFaIE0zIDQgaDEgdjEgaC0xWiBNMjUgNCBoMSB2MSBoLTFaIE0yNiA0IGgxIHYxIGgtMVogTTI3IDQgaDEgdjEgaC0xWiBNMjggNCBoMSB2MSBoLTFaIE0wIDUgaDEgdjEgaC0xWiBNMSA1IGgxIHYxIGgtMVogTTIgNSBoMSB2MSBoLTFaIE0zIDUgaDEgdjEgaC0xWiBNMjUgNSBoMSB2MSBoLTFaIE0yNiA1IGgxIHYxIGgtMVogTTI3IDUgaDEgdjEgaC0xWiBNMjggNSBoMSB2MSBoLTFaIE0wIDYgaDEgdjEgaC0xWiBNMSA2IGgxIHYxIGgtMVogTTIgNiBoMSB2MSBoLTFaIE0zIDYgaDEgdjEgaC0xWiBNMjUgNiBoMSB2MSBoLTFaIE0yNiA2IGgxIHYxIGgtMVogTTI3IDYgaDEgdjEgaC0xWiBNMjggNiBoMSB2MSBoLTFaIE0wIDcgaDEgdjEgaC0xWiBNMSA3IGgxIHYxIGgtMVogTTIgNyBoMSB2MSBoLTFaIE0zIDcgaDEgdjEgaC0xWiBNMjUgNyBoMSB2MSBoLTFaIE0yNiA3IGgxIHYxIGgtMVogTTI3IDcgaDEgdjEgaC0xWiBNMjggNyBoMSB2MSBoLTFaIE0wIDggaDEgdjEgaC0xWiBNMSA4IGgxIHYxIGgtMVogTTIgOCBoMSB2MSBoLTFaIE0zIDggaDEgdjEgaC0xWiBNMjUgOCBoMSB2MSBoLTFaIE0yNiA4IGgxIHYxIGgtMVogTTI3IDggaDEgdjEgaC0xWiBNMjggOCBoMSB2MSBoLTFaIE0wIDkgaDEgdjEgaC0xWiBNMSA5IGgxIHYxIGgtMVogTTIgOSBoMSB2MSBoLTFaIE0zIDkgaDEgdjEgaC0xWiBNMjUgOSBoMSB2MSBoLTFaIE0yNiA5IGgxIHYxIGgtMVogTTI3IDkgaDEgdjEgaC0xWiBNMjggOSBoMSB2MSBoLTFaIE0wIDEwIGgxIHYxIGgtMVogTTEgMTAgaDEgdjEgaC0xWiBNMiAxMCBoMSB2MSBoLTFaIE0zIDEwIGgxIHYxIGgtMVogTTI1IDEwIGgxIHYxIGgtMVogTTI2IDEwIGgxIHYxIGgtMVogTTI3IDEwIGgxIHYxIGgtMVogTTI4IDEwIGgxIHYxIGgtMVogTTAgMTEgaDEgdjEgaC0xWiBNMSAxMSBoMSB2MSBoLTFaIE0yIDExIGgxIHYxIGgtMVogTTMgMTEgaDEgdjEgaC0xWiBNMjUgMTEgaDEgdjEgaC0xWiBNMjYgMTEgaDEgdjEgaC0xWiBNMjcgMTEgaDEgdjEgaC0xWiBNMjggMTEgaDEgdjEgaC0xWiBNMCAxMiBoMSB2MSBoLTFaIE0xIDEyIGgxIHYxIGgtMVogTTIgMTIgaDEgdjEgaC0xWiBNMyAxMiBoMSB2MSBoLTFaIE0yNSAxMiBoMSB2MSBoLTFaIE0yNiAxMiBoMSB2MSBoLTFaIE0yNyAxMiBoMSB2MSBoLTFaIE0yOCAxMiBoMSB2MSBoLTFaIE0wIDEzIGgxIHYxIGgtMVogTTEgMTMgaDEgdjEgaC0xWiBNMiAxMyBoMSB2MSBoLTFaIE0zIDEzIGgxIHYxIGgtMVogTTI1IDEzIGgxIHYxIGgtMVogTTI2IDEzIGgxIHYxIGgtMVogTTI3IDEzIGgxIHYxIGgtMVogTTI4IDEzIGgxIHYxIGgtMVogTTAgMTQgaDEgdjEgaC0xWiBNMSAxNCBoMSB2MSBoLTFaIE0yIDE0IGgxIHYxIGgtMVogTTMgMTQgaDEgdjEgaC0xWgpNMjUgMTQgaDEgdjEgaC0xWiBNMjYgMTQgaDEgdjEgaC0xWiBNMjcgMTQgaDEgdjEgaC0xWiBNMjggMTQgaDEgdjEgaC0xWiBNMCAxNSBoMSB2MSBoLTFaIE0xIDE1IGgxIHYxIGgtMVogTTIgMTUgaDEgdjEgaC0xWiBNMyAxNSBoMSB2MSBoLTFaIE0yNSAxNSBoMSB2MSBoLTFaIE0yNiAxNSBoMSB2MSBoLTFaIE0yNyAxNSBoMSB2MSBoLTFaIE0yOCAxNSBoMSB2MSBoLTFaIE0wIDE2IGgxIHYxIGgtMVogTTEgMTYgaDEgdjEgaC0xWiBNMiAxNiBoMSB2MSBoLTFaIE0zIDE2IGgxIHYxIGgtMVogTTI1IDE2IGgxIHYxIGgtMVogTTI2IDE2IGgxIHYxIGgtMVogTTI3IDE2IGgxIHYxIGgtMVogTTI4IDE2IGgxIHYxIGgtMVogTTAgMTcgaDEgdjEgaC0xWiBNMSAxNyBoMSB2MSBoLTFaIE0yIDE3IGgxIHYxIGgtMVogTTMgMTcgaDEgdjEgaC0xWiBNMjUgMTcgaDEgdjEgaC0xWiBNMjYgMTcgaDEgdjEgaC0xWiBNMjcgMTcgaDEgdjEgaC0xWiBNMjggMTcgaDEgdjEgaC0xWiBNMCAxOCBoMSB2MSBoLTFaIE0xIDE4IGgxIHYxIGgtMVogTTIgMTggaDEgdjEgaC0xWiBNMyAxOCBoMSB2MSBoLTFaIE0yNSAxOCBoMSB2MSBoLTFaIE0yNiAxOCBoMSB2MSBoLTFaIE0yNyAxOCBoMSB2MSBoLTFaIE0yOCAxOCBoMSB2MSBoLTFaIE0wIDE5IGgxIHYxIGgtMVogTTEgMTkgaDEgdjEgaC0xWiBNMiAxOSBoMSB2MSBoLTFaIE0zIDE5IGgxIHYxIGgtMVogTTI1IDE5IGgxIHYxIGgtMVogTTI2IDE5IGgxIHYxIGgtMVogTTI3IDE5IGgxIHYxIGgtMVogTTI4IDE5IGgxIHYxIGgtMVogTTAgMjAgaDEgdjEgaC0xWiBNMSAyMCBoMSB2MSBoLTFaIE0yIDIwIGgxIHYxIGgtMVogTTMgMjAgaDEgdjEgaC0xWiBNMjUgMjAgaDEgdjEgaC0xWiBNMjYgMjAgaDEgdjEgaC0xWiBNMjcgMjAgaDEgdjEgaC0xWiBNMjggMjAgaDEgdjEgaC0xWiBNMCAyMSBoMSB2MSBoLTFaIE0xIDIxIGgxIHYxIGgtMVogTTIgMjEgaDEgdjEgaC0xWiBNMyAyMSBoMSB2MSBoLTFaIE0yNSAyMSBoMSB2MSBoLTFaIE0yNiAyMSBoMSB2MSBoLTFaIE0yNyAyMSBoMSB2MSBoLTFaIE0yOCAyMSBoMSB2MSBoLTFaIE0wIDIyIGgxIHYxIGgtMVogTTEgMjIgaDEgdjEgaC0xWiBNMiAyMiBoMSB2MSBoLTFaIE0zIDIyIGgxIHYxIGgtMVogTTI1IDIyIGgxIHYxIGgtMVogTTI2IDIyIGgxIHYxIGgtMVogTTI3IDIyIGgxIHYxIGgtMVogTTI4IDIyIGgxIHYxIGgtMVogTTAgMjMgaDEgdjEgaC0xWiBNMSAyMyBoMSB2MSBoLTFaIE0yIDIzIGgxIHYxIGgtMVogTTMgMjMgaDEgdjEgaC0xWiBNMjUgMjMgaDEgdjEgaC0xWiBNMjYgMjMgaDEgdjEgaC0xWiBNMjcgMjMgaDEgdjEgaC0xWiBNMjggMjMgaDEgdjEgaC0xWiBNMCAyNCBoMSB2MSBoLTFaIE0xIDI0IGgxIHYxIGgtMVogTTIgMjQgaDEgdjEgaC0xWiBNMyAyNCBoMSB2MSBoLTFaIE0yNSAyNCBoMSB2MSBoLTFaIE0yNiAyNCBoMSB2MSBoLTFaIE0yNyAyNCBoMSB2MSBoLTFaIE0yOCAyNCBoMSB2MSBoLTFaIE0wIDI1IGgxIHYxIGgtMVogTTEgMjUgaDEgdjEgaC0xWiBNMiAyNSBoMSB2MSBoLTFaIE0zIDI1IGgxIHYxIGgtMVogTTQgMjUgaDEgdjEgaC0xWiBNNSAyNSBoMSB2MSBoLTFaIE02IDI1IGgxIHYxIGgtMVogTTcgMjUgaDEgdjEgaC0xWiBNOCAyNSBoMSB2MSBoLTFaIE05IDI1IGgxIHYxIGgtMVogTTEwIDI1IGgxIHYxIGgtMVogTTExIDI1IGgxIHYxIGgtMVogTTEyIDI1IGgxIHYxIGgtMVogTTEzIDI1IGgxIHYxIGgtMVogTTE0IDI1IGgxIHYxIGgtMVogTTE1IDI1IGgxIHYxIGgtMVoKTTE2IDI1IGgxIHYxIGgtMVogTTE3IDI1IGgxIHYxIGgtMVogTTE4IDI1IGgxIHYxIGgtMVogTTE5IDI1IGgxIHYxIGgtMVogTTIwIDI1IGgxIHYxIGgtMVogTTIxIDI1IGgxIHYxIGgtMVogTTIyIDI1IGgxIHYxIGgtMVogTTIzIDI1IGgxIHYxIGgtMVogTTI0IDI1IGgxIHYxIGgtMVogTTI1IDI1IGgxIHYxIGgtMVogTTI2IDI1IGgxIHYxIGgtMVogTTI3IDI1IGgxIHYxIGgtMVogTTI4IDI1IGgxIHYxIGgtMVogTTAgMjYgaDEgdjEgaC0xWiBNMSAyNiBoMSB2MSBoLTFaIE0yIDI2IGgxIHYxIGgtMVogTTMgMjYgaDEgdjEgaC0xWiBNNCAyNiBoMSB2MSBoLTFaIE01IDI2IGgxIHYxIGgtMVogTTYgMjYgaDEgdjEgaC0xWiBNNyAyNiBoMSB2MSBoLTFaIE04IDI2IGgxIHYxIGgtMVogTTkgMjYgaDEgdjEgaC0xWiBNMTAgMjYgaDEgdjEgaC0xWiBNMTEgMjYgaDEgdjEgaC0xWiBNMTIgMjYgaDEgdjEgaC0xWiBNMTMgMjYgaDEgdjEgaC0xWiBNMTQgMjYgaDEgdjEgaC0xWiBNMTUgMjYgaDEgdjEgaC0xWiBNMTYgMjYgaDEgdjEgaC0xWiBNMTcgMjYgaDEgdjEgaC0xWiBNMTggMjYgaDEgdjEgaC0xWiBNMTkgMjYgaDEgdjEgaC0xWiBNMjAgMjYgaDEgdjEgaC0xWiBNMjEgMjYgaDEgdjEgaC0xWiBNMjIgMjYgaDEgdjEgaC0xWiBNMjMgMjYgaDEgdjEgaC0xWiBNMjQgMjYgaDEgdjEgaC0xWiBNMjUgMjYgaDEgdjEgaC0xWiBNMjYgMjYgaDEgdjEgaC0xWiBNMjcgMjYgaDEgdjEgaC0xWiBNMjggMjYgaDEgdjEgaC0xWiBNMCAyNyBoMSB2MSBoLTFaIE0xIDI3IGgxIHYxIGgtMVogTTIgMjcgaDEgdjEgaC0xWiBNMyAyNyBoMSB2MSBoLTFaIE00IDI3IGgxIHYxIGgtMVogTTUgMjcgaDEgdjEgaC0xWiBNNiAyNyBoMSB2MSBoLTFaIE03IDI3IGgxIHYxIGgtMVogTTggMjcgaDEgdjEgaC0xWiBNOSAyNyBoMSB2MSBoLTFaIE0xMCAyNyBoMSB2MSBoLTFaIE0xMSAyNyBoMSB2MSBoLTFaIE0xMiAyNyBoMSB2MSBoLTFaIE0xMyAyNyBoMSB2MSBoLTFaIE0xNCAyNyBoMSB2MSBoLTFaIE0xNSAyNyBoMSB2MSBoLTFaIE0xNiAyNyBoMSB2MSBoLTFaIE0xNyAyNyBoMSB2MSBoLTFaIE0xOCAyNyBoMSB2MSBoLTFaIE0xOSAyNyBoMSB2MSBoLTFaIE0yMCAyNyBoMSB2MSBoLTFaIE0yMSAyNyBoMSB2MSBoLTFaIE0yMiAyNyBoMSB2MSBoLTFaIE0yMyAyNyBoMSB2MSBoLTFaIE0yNCAyNyBoMSB2MSBoLTFaIE0yNSAyNyBoMSB2MSBoLTFaIE0yNiAyNyBoMSB2MSBoLTFaIE0yNyAyNyBoMSB2MSBoLTFaIE0yOCAyNyBoMSB2MSBoLTFaIE0wIDI4IGgxIHYxIGgtMVogTTEgMjggaDEgdjEgaC0xWiBNMiAyOCBoMSB2MSBoLTFaIE0zIDI4IGgxIHYxIGgtMVogTTQgMjggaDEgdjEgaC0xWiBNNSAyOCBoMSB2MSBoLTFaIE02IDI4IGgxIHYxIGgtMVogTTcgMjggaDEgdjEgaC0xWiBNOCAyOCBoMSB2MSBoLTFaIE05IDI4IGgxIHYxIGgtMVogTTEwIDI4IGgxIHYxIGgtMVogTTExIDI4IGgxIHYxIGgtMVogTTEyIDI4IGgxIHYxIGgtMVogTTEzIDI4IGgxIHYxIGgtMVogTTE0IDI4IGgxIHYxIGgtMVogTTE1IDI4IGgxIHYxIGgtMVogTTE2IDI4IGgxIHYxIGgtMVogTTE3IDI4IGgxIHYxIGgtMVogTTE4IDI4IGgxIHYxIGgtMVogTTE5IDI4IGgxIHYxIGgtMVogTTIwIDI4IGgxIHYxIGgtMVogTTIxIDI4IGgxIHYxIGgtMVogTTIyIDI4IGgxIHYxIGgtMVogTTIzIDI4IGgxIHYxIGgtMVogTTI0IDI4IGgxIHYxIGgtMVogTTI1IDI4IGgxIHYxIGgtMVogTTI2IDI4IGgxIHYxIGgtMVogTTI3IDI4IGgxIHYxIGgtMVogTTI4IDI4IGgxIHYxIGgtMVoiLz4KPHBhdGggY2xhc3M9InFyLWRhcmttb2R1bGUgZGFyayBxcmNvZGUiIGZpbGw9IiMwMDAiIGQ9Ik0xMiAxNyBoMSB2MSBoLTFaIi8+CjxwYXRoIGNsYXNzPSJxci1kYXRhLWRhcmsgZGFyayBxcmNvZGUiIGZpbGw9IiMwMDAiIGQ9Ik0xMyA0IGgxIHYxIGgtMVogTTE1IDQgaDEgdjEgaC0xWiBNMTYgNCBoMSB2MSBoLTFaIE0xMyA1IGgxIHYxIGgtMVogTTE0IDUgaDEgdjEgaC0xWiBNMTUgNSBoMSB2MSBoLTFaIE0xMyA2IGgxIHYxIGgtMVogTTE1IDYgaDEgdjEgaC0xWiBNMTYgNiBoMSB2MSBoLTFaIE0xMyA3IGgxIHYxIGgtMVogTTE1IDcgaDEgdjEgaC0xWiBNMTQgOCBoMSB2MSBoLTFaIE0xNiA4IGgxIHYxIGgtMVogTTE2IDkgaDEgdjEgaC0xWiBNMTMgMTEgaDEgdjEgaC0xWiBNMTUgMTEgaDEgdjEgaC0xWiBNMTYgMTEgaDEgdjEgaC0xWiBNMTMgMTIgaDEgdjEgaC0xWiBNMTQgMTIgaDEgdjEgaC0xWiBNMTUgMTIgaDEgdjEgaC0xWiBNNSAxMyBoMSB2MSBoLTFaIE03IDEzIGgxIHYxIGgtMVogTTExIDEzIGgxIHYxIGgtMVogTTEzIDEzIGgxIHYxIGgtMVogTTE0IDEzIGgxIHYxIGgtMVogTTE4IDEzIGgxIHYxIGgtMVogTTIxIDEzIGgxIHYxIGgtMVogTTIyIDEzIGgxIHYxIGgtMVogTTIzIDEzIGgxIHYxIGgtMVogTTQgMTQgaDEgdjEgaC0xWiBNNiAxNCBoMSB2MSBoLTFaIE04IDE0IGgxIHYxIGgtMVogTTkgMTQgaDEgdjEgaC0xWiBNMTEgMTQgaDEgdjEgaC0xWiBNMTMgMTQgaDEgdjEgaC0xWiBNMTYgMTQgaDEgdjEgaC0xWiBNMjAgMTQgaDEgdjEgaC0xWiBNMjEgMTQgaDEgdjEgaC0xWiBNMjIgMTQgaDEgdjEgaC0xWiBNMjQgMTQgaDEgdjEgaC0xWiBNNSAxNSBoMSB2MSBoLTFaIE04IDE1IGgxIHYxIGgtMVogTTExIDE1IGgxIHYxIGgtMVogTTE0IDE1IGgxIHYxIGgtMVogTTE4IDE1IGgxIHYxIGgtMVogTTIxIDE1IGgxIHYxIGgtMVogTTIzIDE1IGgxIHYxIGgtMVogTTcgMTYgaDEgdjEgaC0xWiBNOCAxNiBoMSB2MSBoLTFaIE05IDE2IGgxIHYxIGgtMVogTTExIDE2IGgxIHYxIGgtMVogTTEyIDE2IGgxIHYxIGgtMVogTTEzIDE2IGgxIHYxIGgtMVogTTE0IDE2IGgxIHYxIGgtMVogTTE2IDE2IGgxIHYxIGgtMVogTTE4IDE2IGgxIHYxIGgtMVogTTIwIDE2IGgxIHYxIGgtMVogTTEzIDE3IGgxIHYxIGgtMVogTTE1IDE3IGgxIHYxIGgtMVogTTE3IDE3IGgxIHYxIGgtMVogTTE5IDE3IGgxIHYxIGgtMVogTTIxIDE3IGgxIHYxIGgtMVogTTIzIDE3IGgxIHYxIGgtMVogTTEzIDE4IGgxIHYxIGgtMVogTTE0IDE4IGgxIHYxIGgtMVogTTE1IDE4IGgxIHYxIGgtMVogTTE3IDE4IGgxIHYxIGgtMVogTTE4IDE4IGgxIHYxIGgtMVogTTE5IDE4IGgxIHYxIGgtMVogTTIyIDE4IGgxIHYxIGgtMVogTTIzIDE4IGgxIHYxIGgtMVogTTI0IDE4IGgxIHYxIGgtMVogTTE0IDE5IGgxIHYxIGgtMVogTTE1IDE5IGgxIHYxIGgtMVogTTE2IDE5IGgxIHYxIGgtMVogTTE3IDE5IGgxIHYxIGgtMVogTTE5IDE5IGgxIHYxIGgtMVogTTIwIDE5IGgxIHYxIGgtMVogTTIxIDE5IGgxIHYxIGgtMVogTTE0IDIwIGgxIHYxIGgtMVogTTE1IDIwIGgxIHYxIGgtMVogTTE3IDIwIGgxIHYxIGgtMVogTTE4IDIwIGgxIHYxIGgtMVogTTE5IDIwIGgxIHYxIGgtMVogTTIyIDIwIGgxIHYxIGgtMVogTTI0IDIwIGgxIHYxIGgtMVogTTE4IDIxIGgxIHYxIGgtMVogTTIyIDIxIGgxIHYxIGgtMVogTTIzIDIxIGgxIHYxIGgtMVogTTE0IDIyIGgxIHYxIGgtMVogTTE2IDIyIGgxIHYxIGgtMVogTTIwIDIyIGgxIHYxIGgtMVogTTI0IDIyIGgxIHYxIGgtMVogTTEzIDIzIGgxIHYxIGgtMVogTTE0IDIzIGgxIHYxIGgtMVogTTE4IDIzIGgxIHYxIGgtMVogTTIyIDIzIGgxIHYxIGgtMVogTTEzIDI0IGgxIHYxIGgtMVogTTE0IDI0IGgxIHYxIGgtMVogTTE2IDI0IGgxIHYxIGgtMVoKTTE4IDI0IGgxIHYxIGgtMVogTTIwIDI0IGgxIHYxIGgtMVogTTIyIDI0IGgxIHYxIGgtMVogTTI0IDI0IGgxIHYxIGgtMVoiLz4KPHBhdGggY2xhc3M9InFyLWZpbmRlci1kYXJrIGRhcmsgcXJjb2RlIiBmaWxsPSIjMDAwIiBkPSJNNCA0IGgxIHYxIGgtMVogTTUgNCBoMSB2MSBoLTFaIE02IDQgaDEgdjEgaC0xWiBNNyA0IGgxIHYxIGgtMVogTTggNCBoMSB2MSBoLTFaIE05IDQgaDEgdjEgaC0xWiBNMTAgNCBoMSB2MSBoLTFaIE0xOCA0IGgxIHYxIGgtMVogTTE5IDQgaDEgdjEgaC0xWiBNMjAgNCBoMSB2MSBoLTFaIE0yMSA0IGgxIHYxIGgtMVogTTIyIDQgaDEgdjEgaC0xWiBNMjMgNCBoMSB2MSBoLTFaIE0yNCA0IGgxIHYxIGgtMVogTTQgNSBoMSB2MSBoLTFaIE0xMCA1IGgxIHYxIGgtMVogTTE4IDUgaDEgdjEgaC0xWiBNMjQgNSBoMSB2MSBoLTFaIE00IDYgaDEgdjEgaC0xWiBNMTAgNiBoMSB2MSBoLTFaIE0xOCA2IGgxIHYxIGgtMVogTTI0IDYgaDEgdjEgaC0xWiBNNCA3IGgxIHYxIGgtMVogTTEwIDcgaDEgdjEgaC0xWiBNMTggNyBoMSB2MSBoLTFaIE0yNCA3IGgxIHYxIGgtMVogTTQgOCBoMSB2MSBoLTFaIE0xMCA4IGgxIHYxIGgtMVogTTE4IDggaDEgdjEgaC0xWiBNMjQgOCBoMSB2MSBoLTFaIE00IDkgaDEgdjEgaC0xWiBNMTAgOSBoMSB2MSBoLTFaIE0xOCA5IGgxIHYxIGgtMVogTTI0IDkgaDEgdjEgaC0xWiBNNCAxMCBoMSB2MSBoLTFaIE01IDEwIGgxIHYxIGgtMVogTTYgMTAgaDEgdjEgaC0xWiBNNyAxMCBoMSB2MSBoLTFaIE04IDEwIGgxIHYxIGgtMVogTTkgMTAgaDEgdjEgaC0xWiBNMTAgMTAgaDEgdjEgaC0xWiBNMTggMTAgaDEgdjEgaC0xWiBNMTkgMTAgaDEgdjEgaC0xWiBNMjAgMTAgaDEgdjEgaC0xWiBNMjEgMTAgaDEgdjEgaC0xWiBNMjIgMTAgaDEgdjEgaC0xWiBNMjMgMTAgaDEgdjEgaC0xWiBNMjQgMTAgaDEgdjEgaC0xWiBNNCAxOCBoMSB2MSBoLTFaIE01IDE4IGgxIHYxIGgtMVogTTYgMTggaDEgdjEgaC0xWiBNNyAxOCBoMSB2MSBoLTFaIE04IDE4IGgxIHYxIGgtMVogTTkgMTggaDEgdjEgaC0xWiBNMTAgMTggaDEgdjEgaC0xWiBNNCAxOSBoMSB2MSBoLTFaIE0xMCAxOSBoMSB2MSBoLTFaIE00IDIwIGgxIHYxIGgtMVogTTEwIDIwIGgxIHYxIGgtMVogTTQgMjEgaDEgdjEgaC0xWiBNMTAgMjEgaDEgdjEgaC0xWiBNNCAyMiBoMSB2MSBoLTFaIE0xMCAyMiBoMSB2MSBoLTFaIE00IDIzIGgxIHYxIGgtMVogTTEwIDIzIGgxIHYxIGgtMVogTTQgMjQgaDEgdjEgaC0xWiBNNSAyNCBoMSB2MSBoLTFaIE02IDI0IGgxIHYxIGgtMVogTTcgMjQgaDEgdjEgaC0xWiBNOCAyNCBoMSB2MSBoLTFaIE05IDI0IGgxIHYxIGgtMVogTTEwIDI0IGgxIHYxIGgtMVoiLz4KPHBhdGggY2xhc3M9InFyLXRpbWluZy1kYXJrIGRhcmsgcXJjb2RlIiBmaWxsPSIjMDAwIiBkPSJNMTIgMTAgaDEgdjEgaC0xWiBNMTQgMTAgaDEgdjEgaC0xWiBNMTYgMTAgaDEgdjEgaC0xWiBNMTAgMTIgaDEgdjEgaC0xWiBNMTAgMTQgaDEgdjEgaC0xWiBNMTAgMTYgaDEgdjEgaC0xWiIvPgo8cGF0aCBjbGFzcz0icXItZm9ybWF0LWRhcmsgZGFyayBxcmNvZGUiIGZpbGw9IiMwMDAiIGQ9Ik0xMiA2IGgxIHYxIGgtMVogTTEyIDExIGgxIHYxIGgtMVogTTQgMTIgaDEgdjEgaC0xWiBNNSAxMiBoMSB2MSBoLTFaIE02IDEyIGgxIHYxIGgtMVogTTggMTIgaDEgdjEgaC0xWiBNOSAxMiBoMSB2MSBoLTFaIE0xMSAxMiBoMSB2MSBoLTFaIE0xMiAxMiBoMSB2MSBoLTFaIE0xNyAxMiBoMSB2MSBoLTFaIE0xOCAxMiBoMSB2MSBoLTFaIE0yMiAxMiBoMSB2MSBoLTFaIE0xMiAxOCBoMSB2MSBoLTFaIE0xMiAxOSBoMSB2MSBoLTFaIE0xMiAyMCBoMSB2MSBoLTFaIE0xMiAyMiBoMSB2MSBoLTFaIE0xMiAyMyBoMSB2MSBoLTFaIE0xMiAyNCBoMSB2MSBoLTFaIi8+CjxwYXRoIGNsYXNzPSJxci1maW5kZXItZG90IGRhcmsgcXJjb2RlIiBmaWxsPSIjMDAwIiBkPSJNNiA2IGgxIHYxIGgtMVogTTcgNiBoMSB2MSBoLTFaIE04IDYgaDEgdjEgaC0xWiBNMjAgNiBoMSB2MSBoLTFaIE0yMSA2IGgxIHYxIGgtMVogTTIyIDYgaDEgdjEgaC0xWiBNNiA3IGgxIHYxIGgtMVogTTcgNyBoMSB2MSBoLTFaIE04IDcgaDEgdjEgaC0xWiBNMjAgNyBoMSB2MSBoLTFaIE0yMSA3IGgxIHYxIGgtMVogTTIyIDcgaDEgdjEgaC0xWiBNNiA4IGgxIHYxIGgtMVogTTcgOCBoMSB2MSBoLTFaIE04IDggaDEgdjEgaC0xWiBNMjAgOCBoMSB2MSBoLTFaIE0yMSA4IGgxIHYxIGgtMVogTTIyIDggaDEgdjEgaC0xWiBNNiAyMCBoMSB2MSBoLTFaIE03IDIwIGgxIHYxIGgtMVogTTggMjAgaDEgdjEgaC0xWiBNNiAyMSBoMSB2MSBoLTFaIE03IDIxIGgxIHYxIGgtMVogTTggMjEgaDEgdjEgaC0xWiBNNiAyMiBoMSB2MSBoLTFaIE03IDIyIGgxIHYxIGgtMVogTTggMjIgaDEgdjEgaC0xWiIvPgo8L3N2Zz4K" alt="QR Code" class=" h-28 w-28 ml-auto" />
+                </div>
+
+                <div class="bg-gray-100 border-2 border-dashed border-black text-right px-2 mt-2 mx-2 rounded-md">
+                    <h2 class="font-bold text-lg text-center">ملاحظات هامة</h2>
+                    <hr>
+                    <span class="pb-1 block"> 1 -
+                            ⁠تأكد من التقاط صورة لهوية الزبون الاصلية ( وجه الهوية فقط ) مع وصل الاستلام وأخذ نسخة من
+                            الوصل
+                            قبل تسليم الطلب.
+                        </span>
+                    <span class="pb-1 block"> 2 -
+                            ⁠لا تقم بتسليم الطلب لعنوان غير المذكور، وفي حال عدم تطابق العنوان، يتم إرجاع الطلب للتاجر.
+                        </span>
+                    <span class="pb-1 block"> 3 -
+                            ⁠لا تتواصل إلا مع الأرقام المذكورة في الوصل، وإذا كان هناك أي اختلاف، يجب إرجاع الطلب
+                            للتاجر.
+                        </span>
+                </div>
+            </div>
+            <!-- End Card -->
+        </div>
+    </div>
+    <!-- End Invoice -->
+    <!--[if ENDBLOCK]><![endif]-->
+
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+</div>
+
+<link rel="modulepreload" href="https://app.gini.iq/build/assets/app-834bc790.js" /><script type="module" src="https://app.gini.iq/build/assets/app-834bc790.js" data-navigate-track="reload"></script>    <script src="/livewire/livewire.min.js?id=02b08710"   data-csrf="bsgqc50S4Bh1csXASaheHBb933cahQPNNuaApbUR" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script >window.Wireui = {cache: {},hook(hook, callback) {window.addEventListener(`wireui:${hook}`, () => callback())},dispatchHook(hook) {window.dispatchEvent(new Event(`wireui:${hook}`))}}</script>
+<script src="https://app.gini.iq/wireui/assets/scripts?id=5dda7be9cac61c5885776c4a03411770" defer ></script>
+<script src="https://app.gini.iq/js/alpine.components.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
